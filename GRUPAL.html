@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///D:/PagWeb/Index.html# -->
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>MAFER</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./TemplateFiles/w3.css">
+  <link rel="stylesheet" href="./TemplateFiles/css">
+  <link rel="stylesheet" href="./TemplateFiles/font-awesome.min.css">
+  <style>
+    body {
+      font-family: "Lato", sans-serif
+    }
+
+    .mySlides {
+      display: none
+    }
+  </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1047.0" data-gr-ext-installed="">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a href="Index.html"
+        class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="Portafolio.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small">PORTAFOLIO</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <a href="#"
+          class="w3-padding-large w3-button" title="More">BITACORA 🤍</a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="Bitacora.html"
+            class="w3-bar-item w3-button">Promedio 1</a>
+          <a href="Bitacora2.html"
+            class="w3-bar-item w3-button">Promedio 2</a>
+          <a href="Bitacora3.html" class="w3-bar-item w3-button">Promedio 3</a>
+        </div>
+      </div>
+      <a href="GRUPAL.html"
+        class="w3-bar-item w3-button w3-padding-large w3-hide-small">GRUPAL
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="file:///D:/PagWeb/W3.CSS%20Template.html#port"
+      class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">PORTAFOLIO</a>
+    <a href="file:///D:/PagWeb/W3.CSS%20Template.html#prom1"
+      class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BITACORA</a>
+    <a href="file:///D:/PagWeb/W3.CSS%20Template.html#grupal"
+      class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GRUPAL</a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+    <!-- Automatic Slideshow Images -->
+    <div class="mySlides w3-display-container w3-center" style="display: block;">
+      <img src="./TemplateFiles/HELLO5.jpg" style="width:100%">
+      <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <h1 class="w3-wide">TRABAJO GRUPAL</h1>
+        <p><b></b></p>
+      </div>
+    </div>
+  </div>
+
+    <!-- The Main Section -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+      <div class="w3-third">
+        <img src="./TemplateFiles/ARDUINO1.jpeg" class="w3-round w3-margin-bottom" alt="Random Name"
+          style="width:80%">
+      </div>
+      <h3 class="w3-wide">LAMPARA CRONOMETRADA</h3>
+      <p class="w3-opacity"><i>PROYECTO 2 PROM</i></p>
+      <p class="w3-justify">Solución que promueve la eficiencia energética al apagar automáticamente la lámpara después de un tiempo predeterminado, reduciendo el desperdicio de energía. Esta tecnología sencilla pero efectiva combina innovación y sostenibilidad al usar un Arduino para controlar el tiempo de encendido y apagado. Alinea con los Objetivos de Desarrollo Sostenible al promover la energía asequible.</p>
+    </div>
+
+   
+
+    <!-- End Page Content -->
+  </div>
+
+  <!-- Image of location/map -->
+  <img src="./TemplateFiles/ARDUINO2 (1).jpeg" class="w3-image w3-greyscale-min" style="width:100%">
+
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.facebook.com/mafer.gonzalestupa/?locale=es_LA"><img src="./TemplateFiles/fb.png" style="height:20px"></a>
+    <a href="https://www.instagram.com/mafer_ardesign/"><img src="./TemplateFiles/insta2.png" style="height:20px"></a>
+    <a href="https://www.pinterest.es/m4f3rluu_____/"><img src="./TemplateFiles/pint.png" style="height:20px"></a>
+    <a href="https://twitter.com/TupaMafer"><img src="./TemplateFiles/twi.png" style="height:20px"></a>
+    <a href="https://www.linkedin.com/in/mafer-gonzales-tupa-17a573238/"><img src="./TemplateFiles/in.png" style="height:20px"></a>
+    <p class="w3-medium">Hasta luego<a target="_blank"> mafer.luu</a></p>
+  </footer>
+
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) { myIndex = 1 }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
